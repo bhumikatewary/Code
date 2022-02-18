@@ -5,7 +5,7 @@ public:
         int count=1;
 
         int l=nums.size();
-        for(int i=0;i<l;i++){
+        for(int i=1;i<l;i++){
             if(nums[i]==n){
                 count++;
             }else{
