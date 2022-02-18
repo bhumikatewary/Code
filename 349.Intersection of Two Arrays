@@ -1,0 +1,22 @@
+class Solution {
+public:
+    vector<int> intersection(vector<int>& nums1, vector<int>& nums2) {
+         sort(nums1.begin(),nums1.end());
+        sort(nums2.begin(),nums2.end());
+        vector<int> nums3;
+       int l1=nums1.size();
+       int l2=nums2.size();
+        
+        for(int i=0;i<l1;i++){
+            for(int j=0;j<l2;j++){
+                if(nums1[i]==nums2[j]){
+                   nums3.push_back(nums1[i]);
+                }
+                
+            }
+        }
+        
+        nums3.erase(unique(nums3.begin(),nums3.end()),nums3.end());  
+        return nums3;
+    }
+};
