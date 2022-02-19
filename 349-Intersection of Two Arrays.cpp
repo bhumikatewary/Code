@@ -24,7 +24,7 @@ public:
 };
 
 
-//Method 2
+//Method 2 (It is a better approach)
 
 class Solution {
 public:
